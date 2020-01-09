@@ -1,6 +1,10 @@
 class CozinhaMcDonalds
   def initialize
     puts "EU SOU COZINHEIRO(A) DO MC DONALD'S, QUAIS SÃO MINHAS ATRIBUIÇÕES?"
+    atribuicoes
+  end
+
+  def atribuicoes
     puts '-----LISTA-----'
     puts fritar_hamburguer
     puts '---FIM-LISTA---'

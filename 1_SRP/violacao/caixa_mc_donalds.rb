@@ -1,6 +1,10 @@
 class CaixaMcDonalds
   def initialize
     puts "EU SOU CAIXA DO MC DONALD'S, QUAIS SÃO MINHAS ATRIBUIÇÕES?"
+    atribuicoes
+  end
+
+  def atribuicoes
     puts '-----LISTA-----'
     puts trocar_dinheiro_por_pedido
     puts limpar_chao
