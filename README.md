@@ -33,6 +33,16 @@ Se nada como um pato, voa como um pato, porém precisa de baterias, provavelment
 
 Neste caso criei dois exemplos mas ambos focam na abstração de algo real para o código usando a expressão **é um**. Como sabemos todo quadrado é um retângulo(Quadrado < Retangulo) mas nem todo retangulo é um quadrado. E o exmplo mostra isso, quando precisamos sobrescrever o comportamento de lados iguais no quadrado. No outro exmplo do pato é visível quando para voar o pato de borracha que é um pato(Pato de Borracha < Pato) precisa de baterias, mas o contrário não é verdadeiro.
 
+## I - ISP - Interface Segregation Principle - Princípio de segregação de interfaces
+
+> "States that no clients should be forced to depend on methods ir does not use".
+> "Clientes não devem ser forçados a depender de métodos que não usam".
+
+Muitas Interfaces específicas são melhores do que uma interface única
+Clientes = Classes
+
+Para demonstrar este princípio usei o mesmo exemplo do video pois era bem ilustrativo. Para violar este princípio é necessário criar uma interface que exija muito da classe que a herda. O exemplo criado a interface de cadastro exige o envio de email mas o cadastro de produto não tem pra quem mandar o email.
+
 REFERENCIA/CÓPIA FAJUTA:
 
 https://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/
