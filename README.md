@@ -66,4 +66,5 @@ O que interessa é, não ter o acoplamento muito forte no código, o melhor é a
 ## REFERENCIA:
 
 https://www.eduardopires.net.br/2015/01/solid-teoria-e-pratica/
+
 https://www.netguru.com/codestories/solid-5-dip
