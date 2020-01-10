@@ -7,7 +7,7 @@ class FazerMcOferta
   end
 
   def montar_oferta
-    raise Exception 'Este método precisa ser sobrescrito'
+    raise 'Este método precisa ser sobrescrito'
   end
 
   def nome_oferta

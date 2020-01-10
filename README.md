@@ -19,7 +19,19 @@ trocar o dinheiro por pedidos, fritar hamburguer e limpar o chão. Mas o correto
 
 Uma classe, método e etc não devem ter modificações pesadas para isso devem ser extendidos de outros comportamentos com outras classes abstratas por exemplo.
 
-O exemplo que fiz foi fazer a violação de fazer as mc ofertas dentro da mesma classe, de acordo com a oferta escolhida. A solução foi seprar a resposabilidade em classes para cada oferta que herdada de uma única classe, a classe que sabia montar todas as ofertas, mas os detalhes de cada oferta cada um que passava. Ficando então fechado para mudanças, pois o metodo preparar oferta nao esta pendurado de n ofertas, e aberto para extensão pois quando tiver uma nova oferta, basta criar mais uma classe de oferta e criar método montar-oferta que é resposabilidade de cada tipo de oferta.
+O exemplo que fiz foi resolver o problema muitas mudanças necessárias no método FazerMcOferta#preparar_oferta(nome_oferta) que seria necessário a cada tipo de oferta que existisse (Adicionar mais um if).
+A solução foi passar a resposabilidade de montar cada oferta para suas classes correspondentes tipo: fazer_mc_lanche_feliz a sua montagem estava na classe FazerMcLancheFeliz que por sua vez extende o comportamento de FazerMcOferta. Sendo assim, fica mais fácil criar novas McOfertas e dar manutanção na montagem se necessário, exemplo se agora a oferta do McLanche Feliz oferecer uma batata grande, ao invés de uma batata pequena.
+
+
+## L - LSP - Liskov Substitution Priciple - Princípio de substituição de Liskov
+
+> "Let q(x) be a property provable about objects x of type T. Then q(y) should be provable for objects y of type S, where S is a subtype of T".
+> "Se q(x) é uma propriedade demonstrável dos objetos x de tipo T. Então q(y) deve ser verdadeiro para objetos y de tipo S onde S é um subtipo de T".
+
+"Uma classe base deve poder ser substituída pela sua classe derivada."
+Se nada como um pato, voa como um pato, porém precisa de baterias, provavelmente você possui um problema de abstração.
+
+Neste caso criei dois exemplos mas ambos focam na abstração de algo real para o código usando a expressão **é um**. Como sabemos todo quadrado é um retângulo(Quadrado < Retangulo) mas nem todo retangulo é um quadrado. E o exmplo mostra isso, quando precisamos sobrescrever o comportamento de lados iguais no quadrado. No outro exmplo do pato é visível quando para voar o pato de borracha que é um pato(Pato de Borracha < Pato) precisa de baterias, mas o contrário não é verdadeiro.
 
 REFERENCIA/CÓPIA FAJUTA:
 
