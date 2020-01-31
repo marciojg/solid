@@ -1,5 +1,12 @@
 # SOLID
 
+> [!NOTE]
+>
+> Fazer novos exemplos com base no neste artigo
+>
+> https://www.netguru.com/codestories/solid-principles-1-single-responsibility-principle
+>
+
 ## S - SRP - Single Responsability Principle - Princípio da Responsabilidade Única
 
 > "A class should have only one, and only one, reason to change"
